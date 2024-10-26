@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Resizing Web App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Image Web App</h1>
+    </header>
+    <form id="upload" enctype="multipart/form-data">
+      <input type="file" id="file" name="image" accept=".jpg" />
+      <button type="submit">Upload</button>
+    </form>
+    <form id="resize">
+      <h2>Resize Image</h2>
+      <input
+        type="text"
+        id="imageName"
+        name="imageName"
+        placeholder="Filename"
+        required
+      />
+      <input
+        type="number"
+        id="width"
+        name="width"
+        min="1"
+        placeholder="Width"
+        required
+      />
+      <input
+        type="number"
+        id="height"
+        name="height"
+        min="1"
+        placeholder="Height"
+        required
+      />
+      <button type="submit">Resize</button>
+      <p id="resized"></p>
+    </form>
+    <main>
+      <h2>Image Gallery</h2>
+      <section id="gallery" class="gallery"></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+    
